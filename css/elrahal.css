@@ -1436,11 +1436,11 @@ header .mega-menu .links li a i {
   font-size: 20px;
   transition: var(--main-transition);
 }
-.footer .box .social li .facebooke:hover {
+.footer .box .social li .facebook:hover {
   background-color: #0866ff;
 }
-.footer .box .social li .twitter:hover {
-  background-color: #1da1f2;
+.footer .box .social li .instagram:hover {
+  background-color: #c13584;
 }
 .footer .box .social li .youtube:hover {
   background-color: #ff0000;
