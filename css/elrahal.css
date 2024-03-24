@@ -1515,6 +1515,27 @@ header .mega-menu .links li a i {
   border-top: 1px solid #444;
 }
 /* End Footer */
+/* Start Scroll To Top */
+.scrole-to-top {
+  position: relative;
+  left: 1270px;
+  bottom: 70px;
+  z-index: 1000;
+  position: fixed;
+  text-align: center;
+  width: 56px;
+  height: 56px;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+.scrole-to-top i {
+  font-size: 30px;
+  color: white;
+}
+/* End Scroll To Top */
 /* Start Animation */
 @keyframes up-and-down {
   0%,
