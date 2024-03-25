@@ -1519,7 +1519,7 @@ header .mega-menu .links li a i {
 .scrole-to-top {
   position: relative;
   left: 1270px;
-  bottom: 70px;
+  bottom: 40px;
   z-index: 1000;
   position: fixed;
   text-align: center;
@@ -1530,10 +1530,32 @@ header .mega-menu .links li a i {
   border-radius: 50%;
   cursor: pointer;
   display: none;
+  opacity: 0.9;
 }
 .scrole-to-top i {
   font-size: 30px;
   color: white;
+}
+@media screen and (max-width: 767px) {
+  .scrole-to-top {
+    left: auto;
+    right: 10px;
+    bottom: 10px;
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+  .scrole-to-top i {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .scrole-to-top {
+    left: auto;
+    right: 10px;
+    bottom: 10px;
+    display: block;
+  }
 }
 /* End Scroll To Top */
 /* Start Animation */
