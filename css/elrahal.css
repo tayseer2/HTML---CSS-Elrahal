@@ -1529,8 +1529,8 @@ header .mega-menu .links li a i {
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  display: none;
   opacity: 0.9;
+  display: none;
 }
 .scrole-to-top i {
   font-size: 30px;
@@ -1558,6 +1558,169 @@ header .mega-menu .links li a i {
   }
 }
 /* End Scroll To Top */
+/* Start PopUp  */
+  .popup {
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 500;
+    border-radius: 20px;
+    box-shadow: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+  .popup .btn {
+    position: relative;
+    background-color: #ff3333;
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    left: 288px;
+    bottom: 15px;
+    color: white;
+  }
+  .popup h2 {
+    padding-top: 20px;
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: var(--main-color);
+  }
+  
+  .popup h4 {
+    padding-top: 20px;
+    font-size: 25px;
+    color: var(--main-color-alt);
+  }
+  
+  .popup .social-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .popup .social-info .social {
+    display: flex;
+    justify-content: center;
+  }
+  .popup .social-info {
+    padding-bottom: 40px;
+  }
+  .popup .social-info .social a {
+    width: 60px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin-left: 10px;
+    border-radius: 10px;
+  }
+  .popup .social-info .social li a {
+    background-color: #313131;
+    display: inline-flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    transition: var(--main-transition);
+  }
+  .popup .social-info .social li .facebook:hover {
+    background-color: #0866ff;
+  }
+  .popup .social-info .social li .instagram:hover {
+    background-color: #c13584;
+  }
+  .popup .social-info .social li .youtube:hover {
+    background-color: #ff0000;
+  }
+
+  @media (max-width: 767px) {
+    .popup {
+      background-color: rgb(255, 255, 255);
+      width: 320px;
+      height: 220px;
+      text-align: center;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 500;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      display: none;
+    }
+  
+    .popup .btn {
+      position: absolute;
+      top: -10px; /* تحديد المسافة من الأعلى */
+      right: 10px; /* تحديد المسافة من اليمين */
+      background-color: #ff3333;
+      border: 3px solid white;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      cursor: pointer;
+      color: white;
+    }
+  
+    .popup h2 {
+      padding-bottom: 5px;
+      font-size: 35px;
+      letter-spacing: 2px;
+      color: var(--main-color);
+    }
+  
+    .popup h4 {
+      padding-top: 5px;
+      font-size: 20px;
+      color: var(--main-color-alt);
+    }
+  
+    .popup .social-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+    
+    .popup .social-info .social {
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+  
+    .popup .social-info .social a { 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      margin-left: 10px;
+      background-color: #313131;
+      color: white;
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      transition: var(--main-transition);
+    }
+  
+    .popup .social-info .social a:hover {
+      background-color: #0866ff; /* تغيير اللون عند التحويب */
+    }
+  }
+  
+/* End PopUp  */
 /* Start Animation */
 @keyframes up-and-down {
   0%,
