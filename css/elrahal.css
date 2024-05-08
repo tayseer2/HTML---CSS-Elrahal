@@ -1575,7 +1575,7 @@ header .mega-menu .links li a i {
     display: none;
   }
   .popup .btn {
-    position: relative;
+    position: absolute;
     background-color: #ff3333;
     border: 3px solid white;
     border-radius: 50%;
@@ -1583,8 +1583,7 @@ header .mega-menu .links li a i {
     height: 40px;
     text-align: center;
     cursor: pointer;
-    left: 288px;
-    bottom: 15px;
+    right: 0;
     color: white;
   }
   .popup h2 {
@@ -1645,7 +1644,7 @@ header .mega-menu .links li a i {
     background-color: #ff0000;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 767) {
     .popup {
       background-color: rgb(255, 255, 255);
       width: 320px;
@@ -1663,8 +1662,8 @@ header .mega-menu .links li a i {
   
     .popup .btn {
       position: absolute;
-      top: -10px; /* تحديد المسافة من الأعلى */
-      right: 10px; /* تحديد المسافة من اليمين */
+      top: 0;
+      right: 0;
       background-color: #ff3333;
       border: 3px solid white;
       border-radius: 50%;
