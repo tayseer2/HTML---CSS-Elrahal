@@ -22,14 +22,14 @@ let popDiv = document.querySelector(".popup");
 let popBtn = document.querySelector(".btn");
 
 
-// setTimeout(shwoPopUP, 5000)
-// function shwoPopUP() {
-//     popDiv.style.display = "block"
-// }
+setTimeout(shwoPopUP, 5000)
+function shwoPopUP() {
+    popDiv.style.display = "block"
+}
 
-// popBtn.onclick = function () {
-//     popDiv.remove()
-// }
+popBtn.onclick = function () {
+    popDiv.remove()
+}
 
 
 let days = document.querySelector(".days");
