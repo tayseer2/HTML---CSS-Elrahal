@@ -821,13 +821,16 @@ header .mega-menu .links li a i {
   height: 30px;
   background-color: #eee;
   position: relative;
+  transition: width 1s;
 }
 .our-skills .skill .the-progress span {
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
+  width: 0;
   background-color: var(--main-color);
+  transition: width 1s;
 }
 /* End Skills */
 /* Start Work Steps */
